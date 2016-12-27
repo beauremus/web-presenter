@@ -72,6 +72,8 @@ function presenter() {
             SLIDES[currentSlide].classList.toggle('hidden');
             currentSlide++;
             SLIDES[currentSlide].classList.toggle('hidden');
+            const slideChange = new CustomEvent('slideChange',{detail: {current:currentSlide}});
+            document.dispatchEvent(slideChange);
         }
     }
 
@@ -80,6 +82,8 @@ function presenter() {
             SLIDES[currentSlide].classList.toggle('hidden');
             currentSlide--;
             SLIDES[currentSlide].classList.toggle('hidden');
+            const slideChange = new CustomEvent('slideChange',{detail: {current:currentSlide}});
+            document.dispatchEvent(slideChange);
         }
     }
 }
