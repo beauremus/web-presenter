@@ -1,10 +1,42 @@
+:root {
+  --nal-blue: #004C97;
+  --h4: 250%;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   overflow: hidden;
+  cursor: default;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--nal-blue);
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ul > ul > li {
+  list-style-type: none;
+  text-indent: -5px;
+}
+
+ul > ul > li:before {
+  content: "-";
+  margin-right: 5px;
+}
+
+a {
+  cursor: pointer;
+}
+
+header {
+  margin-bottom: 3%;
 }
 
 .headerBar {
-  background-color: #004C97;
+  background-color: var(--nal-blue);
   display: flex;
   flex-direction: row;
   height: 6.5vw;
@@ -60,7 +92,7 @@ footer * {
 
 .footerInfo {
   padding: 0 2.5%;
-  color: #004C97;
+  color: var(--nal-blue);
 }
 
 .footerInfo span {
@@ -86,3 +118,32 @@ footer * {
   align-self: center;
   box-shadow: -1px 4px 0px 0px #a59c94;
 }
+
+.slide .title {
+  color: var(--nal-blue);
+  font-size: 400%;
+  font-weight: bold;
+  margin-left: 4%;
+}
+.slide .author {
+  color: var(--nal-blue);
+  font-size: var(--h4);
+  margin-left: 4%;
+}
+.slide .meeting {
+  color: var(--nal-blue);
+  font-size: var(--h4);
+  margin-left: 4%;
+}
+.slide .date {
+  color: var(--nal-blue);
+  font-size: var(--h4);
+  margin-left: 4%;
+}
+
+.titleSlide {
+  margin-top: .6em;
+  margin-bottom: .6em;
+}
+
+/** TODO: General formatting *Salutes* */

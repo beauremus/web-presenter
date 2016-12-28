@@ -56,32 +56,36 @@ function presenter() {
         }
     });
 
+    // TODO: Look into custom right click menu
+
     /** DOM HANDLER */
 
-    const SLIDES = document.querySelectorAll('.slide');
+    let slides = document.querySelectorAll('.slide');
 
     let currentSlide = 0;
 
     // begin at 1 making first slide visible
-    for (var i = 1; i < SLIDES.length; i++) {
-        SLIDES[i].classList.toggle('hidden');
+    for (var i = 1; i < slides.length; i++) {
+        slides[i].classList.toggle('hidden');
     }
 
     function nextSlide() {
-        if (currentSlide < SLIDES.length-1) {
-            SLIDES[currentSlide].classList.toggle('hidden');
+        slides = document.querySelectorAll('.slide');
+        if (currentSlide < slides.length-1) {
+            slides[currentSlide].classList.toggle('hidden');
             currentSlide++;
-            SLIDES[currentSlide].classList.toggle('hidden');
+            slides[currentSlide].classList.toggle('hidden');
             const slideChange = new CustomEvent('slideChange',{detail: {current:currentSlide}});
             document.dispatchEvent(slideChange);
         }
     }
 
     function prevSlide() {
+        slides = document.querySelectorAll('.slide');
         if (currentSlide > 0) {
-            SLIDES[currentSlide].classList.toggle('hidden');
+            slides[currentSlide].classList.toggle('hidden');
             currentSlide--;
-            SLIDES[currentSlide].classList.toggle('hidden');
+            slides[currentSlide].classList.toggle('hidden');
             const slideChange = new CustomEvent('slideChange',{detail: {current:currentSlide}});
             document.dispatchEvent(slideChange);
         }
