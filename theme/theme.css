@@ -1,0 +1,149 @@
+:root {
+  --nal-blue: #004C97;
+  --h4: 250%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  cursor: default;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--nal-blue);
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ul > ul > li {
+  list-style-type: none;
+  text-indent: -5px;
+}
+
+ul > ul > li:before {
+  content: "-";
+  margin-right: 5px;
+}
+
+a {
+  cursor: pointer;
+}
+
+header {
+  margin-bottom: 3%;
+}
+
+.headerBar {
+  background-color: var(--nal-blue);
+  display: flex;
+  flex-direction: row;
+  height: 6.5vw;
+}
+
+#headerBar {
+  height: .7em;
+  background-color: #FFFFFF;
+  flex: 5;
+  align-self: center;
+}
+
+.imgContainer {
+  flex: 1;
+  display: flex;
+  margin-right: .85%;
+}
+
+.imgContainer img {
+  margin: auto;
+  max-width: 100%;
+}
+
+#titleImage {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 49vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer * {
+  margin: .1em 0;
+}
+
+.fnal {
+  display: flex;
+  padding: 0 2.5%;
+}
+
+.footerInfo {
+  padding: 0 2.5%;
+  color: var(--nal-blue);
+}
+
+.footerInfo span {
+  margin-right: 5em;
+  font-size: 1.3em;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+#bottomBar {
+  height: 1em;
+  background-color: #99D6EA;
+  flex: 6;
+  align-self: center;
+  box-shadow: -1px 4px 0px 0px #a59c94;
+}
+
+.slide .title {
+  color: var(--nal-blue);
+  font-size: 400%;
+  font-weight: bold;
+  margin-left: 4%;
+}
+.slide .author {
+  color: var(--nal-blue);
+  font-size: var(--h4);
+  margin-left: 4%;
+}
+.slide .meeting {
+  color: var(--nal-blue);
+  font-size: var(--h4);
+  margin-left: 4%;
+}
+.slide .date {
+  color: var(--nal-blue);
+  font-size: var(--h4);
+  margin-left: 4%;
+}
+
+.titleSlide {
+  margin-top: .6em;
+  margin-bottom: .6em;
+}
+
+/** TODO: General formatting *Salutes* */
