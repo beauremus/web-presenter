@@ -19,4 +19,4 @@ I'll be adapting the Fermi theme I created here to Spectacle. That repo can be f
 [2]: https://github.com/hakimel/reveal.js/
 [3]: https://github.com/jlantunez/webslides
 [4]: https://github.com/imakewebthings/deck.js
-[5]: https://github.com/beaunus/fermipresentations
+[5]: https://github.com/beauremus/fermipresentations
